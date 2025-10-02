@@ -2,18 +2,23 @@ package package2;
 
 
 public class parent {
-//    int bank_balance=10000;
-//    public int balance=1000;
-public void show(){
-    System.out.println("Parent function invoked");
+   int age;
+   char gender;
+public void display(){
+    System.out.println("displaying void function");
 }
-//    void add_amount(int amount){
-//        bank_balance=bank_balance+amount;
-//        System.out.println("Bank Balance added by "+amount);
-//        System.out.println("Current Bank Balance:"+bank_balance);
-//    }
+public void display(int a,int b){
+    System.out.println(a);
+}
+void display(int age,char gender){
+    this.gender=gender;
+    this.age=age;
+}
+
     public static void main(String[] args) {
-//        child obj=new child();
-//        System.out.println(obj.balance);
+        parent par=new parent();
+        par.display(21,'M');
+        System.out.println(par.age);
+        System.out.println(par.gender);
     }
 }
