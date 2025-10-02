@@ -1,0 +1,163 @@
+Operators
+operators are special symbols that perform operations on variables or values. These operators are essential in programming as they allow you to manipulate data efficiently.
+
+1. Arithmetic Operators
+Arithmetic Operators are used to perform simple arithmetic operations on primitive and non-primitive data types.
+* : Multiplication,  / : Division,  % : Modulo,  + : Addition, - : Subtraction
+
+2. Unary Operators
+Unary Operators need only one operand. They are used to increment, decrement, or negate a value. 
+Unary Plus (+)
+•	Indicates a positive value (usually redundant).
+int x = +10;
+System.out.println(x);  // 10
+Unary Minus (-)
+•	Negates (changes sign) of a number.
+int x = 10;
+int y = -x;
+System.out.println(y);  // -10
+Increment (++)
+•	Increases value by 1.
+•	Two forms:
+o	Pre-increment (++x): increment first, then use.
+o	Post-increment (x++): use first, then increment.
+int x = 5;
+System.out.println(++x);  // 6 (increment first, then print)
+System.out.println(x++);  // 6 (print first, then increment)
+System.out.println(x);    // 7
+
+Decrement (--)
+•	Decreases value by 1.
+•	Two forms:
+o	Pre-decrement (--x): decrement first, then use.
+o	Post-decrement (x--): use first, then decrement.
+int x = 5;
+System.out.println(--x);  // 4
+System.out.println(x--);  // 4
+System.out.println(x);    // 3
+
+
+Logical NOT (!)
+•	Works with boolean values.
+•	Reverses the truth value.
+boolean flag = true;
+System.out.println(!flag);  // false
+
+Bitwise Complement (~)
+•	Works with integers.
+•	Flips all bits (0 → 1, 1 → 0).
+•	Uses 2’s complement to represent negative numbers.
+int x = 5;    // binary: 00000000 00000000 00000000 00000101
+int y = ~x;   // binary: 11111111 11111111 11111111 11111010
+System.out.println(y);  // -6
+
+3. Assignment Operator
+ '=' The assignment operator is used to assign a value to any variable.
++= , Add and assign,  -= , Subtract and assign.,  *= , Multiply and assign.,  /= , Divide and assign.,  %= , Modulo and assign.
+4. Relational Operators
+Relational Operators are used to check for relations like equality, greater than, and less than
+•	== , Equal to.      
+•	!= , Not equal to.
+•	< , Less than.
+•	<= , Less than or equal to.
+•	> , Greater than.
+•	>= , Greater than or equal to.
+
+5. Logical Operators
+        Logical operators are used to determine the logic between variables or values:
+•	&&, Logical AND: returns true when both conditions are true.
+•	||, Logical OR: returns true if at least one condition is true.
+•	!, Logical NOT: returns true when a condition is false and vice-versa
+
+6. Ternary operator
+The Ternary Operator is a shorthand version of the if-else statement. It has three operands and hence the name Ternary. The general format is,
+   condition ? if true : if false 
+int a = (10>20)? 10:20;
+7. Bitwise Operators
+Bitwise Operators are used to perform the manipulation of individual bits of a number and with any of the integer types.
+•	& (Bitwise AND): returns bit-by-bit AND of input values.   5&4
+•	| (Bitwise OR): returns bit-by-bit OR of input values.
+•	^ (Bitwise XOR): returns bit-by-bit XOR of input values.
+8. Shift Operators
+Shift Operators are used to shift the bits of a number left or right
+•	<< (Left shift)
+•	>> (Signed right shift)
+
+Decision Making
+A programming language uses control statements to control the flow of execution of a program based on certain conditions.
+
+1. Java if Statement
+The if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e. if a certain condition is true then a block of statements is executed otherwise not. 
+if(condition) { 
+// Statements to execute if 
+// condition is true 
+}
+
+2. Java if-else Statement
+The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won't. But what if we want to do something else if the condition is false? Here, comes the "else" statement. We can use the else statement with the if statement to execute a block of code when the condition is false.
+if(condition){
+// Executes this block if 
+// condition is true
+}else{
+// Executes this block if 
+// condition is false
+}
+
+
+3. Java nested-if Statement
+Nested if statements mean an if statement inside an if statement
+if (condition1) { 
+// Executes when condition1 is true 
+if (condition2)
+{ 
+// Executes when condition2 is true 
+} 
+}
+
+
+
+4. Java if-else-if ladder
+Use the else if statement to specify a new condition if the first condition is false.
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+}
+
+
+
+5. Java Switch Case
+Instead of writing many if..else statements, you can use the switch statement.
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+
+
+Loops
+Loops in programming allow a set of instructions to run multiple times based on a condition. In Java, there are three types of Loops, which are explained below:
+1. for loop
+When you know exactly how many times you want to loop through a block of code
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+2. While Loop
+The while loop repeats a block of code as long as the specified condition is true:
+while (condition) {
+  // code block to be executed
+}
+4. Do/While Loop
+The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true. Then it will repeat the loop as long as the condition is true.
+
+Do{
+// code block to be executed
+}while(condition)

@@ -1,0 +1,14 @@
+Access Modifiers
+--Defines The Scope of the Variable or class
+--Default
+--Private
+--Public
+--Protected
+private
+--Only Used within a class
+Default
+--Used within a class and inside a package
+Protected
+--used within a class and inside a package and different package
+public
+--

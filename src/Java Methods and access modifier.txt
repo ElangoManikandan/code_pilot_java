@@ -1,0 +1,191 @@
+Java Methods
+A method is a block of code that performs a specific task.
+•	Methods help us reuse code (write once, use many times).
+•	They improve readability, modularity, and maintainability.
+Method Syntax
+returnType methodName(parameters) {
+    // body of method
+    return value;   // (if returnType is not void)
+}
+
+•	returnType → Type of value method returns (int, String, void, etc.).
+•	methodName → Name of method (should follow camelCase).
+•	parameters → Input values (optional).
+•	body → Code that runs when method is called.
+
+Types of Methods
+(A) Predefined Methods
+•	Already defined in Java libraries.
+          public class PredefinedExample {
+    public static void main(String[] args) {
+        String name = "Hello Java";
+        System.out.println(name.length());   // length() is predefined method
+    }
+         }
+(B) User-Defined Methods
+Created by programmers.
+Example 1: No return, no parameters
+public class Example1 {
+    static void greet() {
+        System.out.println("Hello, Welcome to Java!");
+    }
+    public static void main(String[] args) {
+        greet();   // method call
+    }
+}
+
+
+
+
+Example 2: With return type and parameters
+public class Example2 {
+    static int add(int a, int b) {
+        return a + b;
+    }
+    public static void main(String[] args) {
+        int sum = add(10, 20);
+        System.out.println("Sum = " + sum);
+    }
+}
+
+3. Method Overloading
+•	Same method name, different parameter lists.
+•	Decided at compile time.
+public class OverloadExample {
+    static int add(int a, int b) {
+        return a + b;
+    }
+    static double add(double a, double b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(add(5, 10));       // calls int method
+        System.out.println(add(5.5, 10.5));   // calls double method
+    }
+}
+
+4. Static vs Non-Static Methods
+•	Static methods → belong to class, can be called without object.
+•	Non-static methods → require object to call.
+public class StaticVsNonStatic {
+    static void staticMethod() {
+        System.out.println("I am static");
+    }
+
+    void nonStaticMethod() {
+        System.out.println("I am non-static");
+    }
+
+    public static void main(String[] args) {
+        staticMethod();  // called directly
+
+        StaticVsNonStatic obj = new StaticVsNonStatic();
+        obj.nonStaticMethod();  // called using object
+    }
+}
+
+Access Modifiers in Java
+•	Access modifiers define the scope (visibility) of classes, methods, and variables.
+•	They control which parts of code can access them.
+
+Types of Access Modifiers
+There are 4 types of access modifiers available in Java: 
+1.	Default - No keyword required
+2.	Private
+3.	Protected
+4.	Public
+
+
+  
+1. Default Access Modifier
+•	When no access modifier is specified for a class, method, or data member, it is said to have the default access modifier by default. 
+•	This means only classes within the same package can access it.
+
+// File: Package1/ClassA.java
+package Package1;
+class ClassA {
+    void display() {   // default access
+        System.out.println("Hello from ClassA");
+    }
+}
+// File: Package1/TestA.java
+package Package1;
+public class TestA {
+    public static void main(String[] args) {
+        ClassA obj = new ClassA();
+        obj.display();   //  Works (same package)
+    }
+}
+
+// File: Package2/TestB.java
+package Package2;
+import Package1.ClassA;
+public class TestB {
+    public static void main(String[] args) {
+        // ClassA obj = new ClassA(); //  ERROR: default not accessible outside package
+    }
+}
+
+Explanation: In this example, the program will show the compile-time error when we try to access a default modifier class from a different package.
+
+2. Private Access Modifier
+The private access modifier is specified using the keyword private. The methods or data members declared as private are accessible only within the class in which they are declared.
+•	Any other class of the same package will not be able to access these members.
+
+class BankAccount {
+    private double balance = 1000;
+    private void showBalance() {
+        System.out.println("Balance: " + balance);
+    }
+    public void accessBalance() {
+        showBalance();  // private method accessed within class
+    }
+}
+public class TestPrivate {
+    public static void main(String[] args) {
+        BankAccount acc = new BankAccount();
+        // acc.showBalance();   // ERROR: private not accessible
+        acc.accessBalance();    //  OK
+    }
+}
+
+3. Protected Access Modifier
+The protected access modifier is specified using the keyword protected. The methods or data members declared as protected are accessible within the same package or subclasses in different packages.
+// File: Package1/Parent.java
+package Package1;
+public class Parent {
+    protected void show() {
+        System.out.println("Protected method in Parent");
+    }
+}
+
+// File: Package2/Child.java
+package Package2;
+import Package1.Parent;
+public class Child extends Parent {
+    public static void main(String[] args) {
+        Child c = new Child();
+        c.show();   // Accessible via inheritance
+    }
+}
+4. Public Access Modifier
+The public access modifier is specified using the keyword public. 
+•	The public access modifier has the widest scope among all other access modifiers.
+•	Classes, methods, or data members that are declared as public are accessible from everywhere in the program. There is no restriction on the scope of public data members.
+  // File: Package1/ClassB.java
+package Package1;
+public class ClassB {
+    public void display() {
+        System.out.println("Public method in ClassB");
+    }
+
+// File: Package2/TestC.java
+package Package2;
+import Package1.ClassB;
+public class TestC {
+    public static void main(String[] args) {
+        ClassB obj = new ClassB();
+        obj.display();   // Works everywhere
+    }
+}
