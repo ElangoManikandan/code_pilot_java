@@ -4,21 +4,17 @@ class Form {
     String name;
     int rollno;
     private long phone;
-
     public void display() {
         System.out.println(name);
         System.out.println(rollno);
     }
-
     public void setValues(String str, int num) {
         name = str;
         rollno = num;
     }
-
     public String getname() {
         return name;
     }
-
 }
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -59,6 +55,8 @@ public class Main {
         Scanner sc=new Scanner(System.in);
         char a=sc.next().charAt(5);
         System.out.println(a);
+        int[] arr=new int[29];
+
 
     }
 

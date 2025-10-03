@@ -7,7 +7,7 @@ class child extends parent {
     //    protected int balance=1000;
     public static void main(String[] args) {
 //        System.out.println("Palindrome\nEnter a number");
-//        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 //        int value = sc.nextInt();
 //        int original = value;
 //        int reverse = 0;
@@ -53,6 +53,24 @@ class child extends parent {
 //            }
 //        }
 //        System.out.println();
-
+//        try
+//        {
+//            int i, sum;
+//            sum = 10;
+//            for (i = -1; i < 3 ;++i)
+//                sum = (sum / i);
+//        }
+//        catch(ArithmeticException e)
+//        {
+//            System.out.print("0");
+//        }
+        int age=sc.nextInt();
+        System.out.println(age);
+        sc.nextLine();
+        String name= sc.nextLine();
+        System.out.println(name);
+        int arr[]=new int[30];
+        arr[29]=1;
+        System.out.println(arr[arr.length-1]);
     }
 }

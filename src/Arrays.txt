@@ -1,0 +1,18 @@
+Primitive Data Types
+-int
+-char
+etc
+
+Non Primitive Data Types
+Arrays
+Strings
+List
+Class
+Interface
+
+Arrays
+      Collection of Similar Data types
+      --Once Declared,Size Cannot Changed
+      --Indexed->Elements can be Accessed using Indexes
+      --Homogenious->Stores Only One type
+      --Stored in Contiguous Memory access for Faster Location
