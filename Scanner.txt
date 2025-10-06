@@ -1,0 +1,12 @@
+SCANNER NEWLINE BUFFER ISSUE:
+    After Getting Input as Int (A Token based Input like int,float,Boolean,double),
+    Inputs Which can cause this Issues are,
+    integer,
+    double,
+    float,
+    long,
+    short,
+    byte,
+    Boolean
+    We cannot Get Input as Whole Line(nextLine)
+

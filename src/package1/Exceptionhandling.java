@@ -2,6 +2,7 @@ package package1;
 class UserDefined extends Exception{
     UserDefined(String str){
         super(str);
+        System.out.println("It is a User Defined Exception");
     }
 }
 

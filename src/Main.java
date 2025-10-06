@@ -52,10 +52,13 @@ public class Main {
 //        for(int k:arr){
 //            System.out.println(k);
 //        }
-        Scanner sc=new Scanner(System.in);
-        char a=sc.next().charAt(5);
-        System.out.println(a);
-        int[] arr=new int[29];
+//        Scanner sc=new Scanner(System.in);
+//        char a=sc.next().charAt(5);
+//        System.out.println(a);
+//        int[] arr=new int[29];
+        String s="5.34521";
+        Double d=Double.parseDouble(s);
+        System.out.println(d);
 
 
     }
