@@ -3,7 +3,7 @@ Primitive Data Types
 -char
 etc
 
-Non Primitive Data Types
+Non-Primitive Data Types
 Arrays
 Strings
 List
@@ -11,8 +11,20 @@ Class
 Interface
 
 Arrays
+      --It is a primitive data type
       Collection of Similar Data types
-      --Once Declared,Size Cannot Changed
+      --Once Declared,Size cannot change
       --Indexed->Elements can be Accessed using Indexes
       --Homogenious->Stores Only One type
       --Stored in Contiguous Memory access for Faster Location
+
+CREATING ARRAY
+
+        --Int[] arr={};
+        --Int[] arr={};
+
+        --Int[] arr=new Int[5];//Fixed size
+
+ARRAY OF OBJECTS
+        -Used to store and manage multiple entities.
+        id,name,email,phone

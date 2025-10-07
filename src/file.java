@@ -6,7 +6,8 @@ public class file {
         try {
             File f = new File("src/package2/Scanner.txt");
             Scanner reader = new Scanner(f);
-            while(reader.hasNextLine()){
+            while(reader.hasNextLine())
+            {
                 System.out.print(reader.nextLine());
             }
         }catch (Exception E){
