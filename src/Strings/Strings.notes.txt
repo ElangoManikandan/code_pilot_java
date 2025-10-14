@@ -1,0 +1,11 @@
+1.Count vowels and Consonants
+2.palindrome or not
+3.Reverse a String
+4.Word Count in a sentence
+5.Compare two Strings without equals
+6.Replace all spaces with -
+7.Find duplicate Characters
+8.Remove vowels from a String
+9.Remove all Duplicates
+10.Swap two String
+11.Swap two Strings without Third Variable

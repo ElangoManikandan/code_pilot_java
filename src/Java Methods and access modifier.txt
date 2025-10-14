@@ -8,7 +8,7 @@ returnType methodName(parameters) {
     return value;   // (if returnType is not void)
 }
 
-•	returnType → Type of value method returns (int, String, void, etc.).
+•	returnType → Type of value method returns (int, Strings, void, etc.).
 •	methodName → Name of method (should follow camelCase).
 •	parameters → Input values (optional).
 •	body → Code that runs when method is called.
@@ -17,8 +17,8 @@ Types of Methods
 (A) Predefined Methods
 •	Already defined in Java libraries.
           public class PredefinedExample {
-    public static void main(String[] args) {
-        String name = "Hello Java";
+    public static void main(Strings[] args) {
+        Strings name = "Hello Java";
         System.out.println(name.length());   // length() is predefined method
     }
          }
@@ -29,7 +29,7 @@ public class Example1 {
     static void greet() {
         System.out.println("Hello, Welcome to Java!");
     }
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         greet();   // method call
     }
 }
@@ -42,7 +42,7 @@ public class Example2 {
     static int add(int a, int b) {
         return a + b;
     }
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         int sum = add(10, 20);
         System.out.println("Sum = " + sum);
     }
@@ -59,7 +59,7 @@ public class OverloadExample {
         return a + b;
     }
 
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         System.out.println(add(5, 10));       // calls int method
         System.out.println(add(5.5, 10.5));   // calls double method
     }
@@ -77,7 +77,7 @@ public class StaticVsNonStatic {
         System.out.println("I am non-static");
     }
 
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         staticMethod();  // called directly
 
         StaticVsNonStatic obj = new StaticVsNonStatic();
@@ -112,7 +112,7 @@ class ClassA {
 // File: Package1/TestA.java
 package Package1;
 public class TestA {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         ClassA obj = new ClassA();
         obj.display();   //  Works (same package)
     }
@@ -122,7 +122,7 @@ public class TestA {
 package Package2;
 import Package1.ClassA;
 public class TestB {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         // ClassA obj = new ClassA(); //  ERROR: default not accessible outside package
     }
 }
@@ -143,7 +143,7 @@ class BankAccount {
     }
 }
 public class TestPrivate {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         BankAccount acc = new BankAccount();
         // acc.showBalance();   // ERROR: private not accessible
         acc.accessBalance();    //  OK
@@ -164,7 +164,7 @@ public class Parent {
 package Package2;
 import Package1.Parent;
 public class Child extends Parent {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         Child c = new Child();
         c.show();   // Accessible via inheritance
     }
@@ -184,7 +184,7 @@ public class ClassB {
 package Package2;
 import Package1.ClassB;
 public class TestC {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         ClassB obj = new ClassB();
         obj.display();   // Works everywhere
     }
