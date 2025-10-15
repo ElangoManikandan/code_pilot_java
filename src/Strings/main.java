@@ -18,6 +18,5 @@ public class main {
 //        StringBuffer sb=new StringBuffer();
 //        sb.append("12");
 //        System.out.println(sb);
-
     }
 }

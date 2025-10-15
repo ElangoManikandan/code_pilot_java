@@ -2,6 +2,7 @@ package Strings;
 
 public class StringTasks {
     public static void main(String[] args) {
+
         //COUNT VOWELS AND CONSONANTS
         String p1String = "it is a Valid Question";
         int vowels = 0;
@@ -19,7 +20,6 @@ public class StringTasks {
             }
         }
         System.out.println("Vowels : " + vowels + " Consonants: " + consonants);
-
 
         //PALINDROME OR NOT
         String p2String = "malayalam";
