@@ -11,7 +11,7 @@ Class
 Interface
 
 Arrays
-      --It is a non primitive data type
+      --It is a non-primitive data type
       Collection of Similar Data types
       --Once Declared,Size cannot change
       --Indexed->Elements can be Accessed using Indexes
@@ -19,7 +19,6 @@ Arrays
       --Stored in Contiguous Memory access for Faster Location
 
 CREATING ARRAY
-
         --Int[] arr={};
         --Int[] arr={};
 

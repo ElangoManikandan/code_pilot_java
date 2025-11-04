@@ -18,5 +18,24 @@ public class main {
 //        StringBuffer sb=new StringBuffer();
 //        sb.append("12");
 //        System.out.println(sb);
+        String s="0P1";
+        s.toLowerCase();
+        String trimmed="";
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if(c>='A'&& c<='Z' || c>='a' && c<='z'){
+                trimmed=trimmed+c;
+            }
+        }
+        trimmed=trimmed.toLowerCase();
+        String rev="";
+        for(int i=trimmed.length()-1;i>=0;i--){
+            rev=rev+trimmed.charAt(i);
+        }
+        if(trimmed.equals(rev)){
+            System.out.println(true);
+        }else{
+            System.out.println(false);;
+        }
     }
 }
