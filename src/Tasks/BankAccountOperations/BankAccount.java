@@ -34,7 +34,6 @@ class Main {
         System.out.println("Account Created: " + b1.accountNumber + "- " + b1.accountHolderName);
         b1.deposit(5000);
         b1.withdraw(2000);
-        b1.setBalance(10000);
         System.out.println(b1.checkBalance());
     }
 }

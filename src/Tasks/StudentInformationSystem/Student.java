@@ -28,7 +28,7 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        Student s1=new Student("Elango",112,"CSE",91);
+        Student s1=new Student("Bala",112,"CSE",91);
         s1.displayDetails();
     }
 

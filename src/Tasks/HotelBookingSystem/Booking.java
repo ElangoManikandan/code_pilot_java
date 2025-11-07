@@ -22,7 +22,7 @@ public class Booking {
     }
 
     void displayBookingDetails(){
-        System.out.println("Customer: "+customer+"| Contact :"+contact+"| Room No: "+roomNo+" | Type: "+type+"| Price per Night: Rs."+(int)(pricePerNight)+" | Days: "+numberOfDays+" | Total Bill : Rs."+(int)calculateTotalBill(pricePerNight,numberOfDays));
+        System.out.println("Customer: "+customer+"| Contact :"+contact+"| Room No: "+roomNo+" | Type: "+type+"\n | Price per Night: Rs."+(int)(pricePerNight)+" | Days: "+numberOfDays+" | Total Bill : Rs."+(int)calculateTotalBill(pricePerNight,numberOfDays));
     }
 
     static double calculateTotalBill(double pricePerNight,int numberOfDays){
