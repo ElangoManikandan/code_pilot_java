@@ -1,6 +1,7 @@
 package FileHandling;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class Main {
     public static boolean getFirstLine(){
@@ -53,9 +54,12 @@ public class Main {
     }
     public static void main(String[] args)  {
 
-//        System.out.println(getFirstLine());
-
-        getDevDetails();
-        getDevDetailsById("1");
+//       System.out.println(getFirstLine());
+//
+//        getDevDetails();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter User id: ");
+        String id=sc.next();
+        getDevDetailsById(id);
     }
 }

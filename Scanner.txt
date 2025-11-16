@@ -9,4 +9,3 @@ SCANNER NEWLINE BUFFER ISSUE:
     byte,
     Boolean
     We cannot Get Input as Whole Line(nextLine)
-
