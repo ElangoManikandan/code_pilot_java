@@ -34,9 +34,9 @@ public class MovieRecommendationSystem {
                 .collect(Collectors.groupingBy(m -> m.getGenre()));
             groupedMoviesByGenre.forEach((genre, movielist) -> {
             System.out.println(genre + " : ");
-            System.out.println("-------------");
+            System.out.println("-----------");
             movielist.forEach(m -> System.out.println("Title: " + m.getTitle() + " Genre: " + m.getGenre() + " Rating: " + m.getRating() + " Year: " + m.getYear()));
-            System.out.println("--------------");
+            System.out.println("-----------");
                 System.out.println("\n\nAVERAGE RATING PER GENRE:");
             Map<String,Double> avgRatingsPerGenre=movies.stream()
                     .collect(Collectors.groupingBy(
