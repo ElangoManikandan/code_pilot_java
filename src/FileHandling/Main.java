@@ -16,7 +16,9 @@ public class Main {
                 String[] words=line.split(" ");
                 System.out.println(words[0]+","+words[1]);
             }
-        }catch(Exception e){
+        }
+        catch(Exception e)
+        {
         }
         return true;
     }
